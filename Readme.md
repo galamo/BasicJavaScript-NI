@@ -35,3 +35,7 @@
 
 - print the email domain
 - use indexOf + substirng
+
+# Ex 4
+
+- print a message with email, user name and username length
