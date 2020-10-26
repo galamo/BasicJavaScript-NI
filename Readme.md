@@ -15,7 +15,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
+
+# Ex1
+
+- save your email inside a variable
+- print the email to console.
