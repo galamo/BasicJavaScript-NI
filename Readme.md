@@ -59,3 +59,17 @@ how can we solve this issue ?
 ```js
 const str = "gal@gmail.com,sivan@hotmail.com,luba@yahoo.com";
 ```
+
+# Ex 7
+
+- create a function that recieve 2 numbers
+- function return the avarage between those numbers
+
+# Ex 8
+
+- create a function that recieve array of numbers
+- function return the avarage of all number in array
+
+# Ex 9
+
+- create function which recieve 2 numbers and print the bigger
