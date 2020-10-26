@@ -15,7 +15,8 @@ console.log(userNameLength);
 console.log(userName3);
 
 // indexOf - get the index of the specific given substring or character
-var atLocation = userName.indexOf("@");
+const atChar = "@";
+var atLocation = userName.indexOf(atChar);
 console.log("@ location: " + atLocation);
 
 // subString - get substring according to index start and index end not included
@@ -60,5 +61,3 @@ var array = userName.split("@");
 var optimisedUserName = array[0];
 console.log(array);
 console.log(optimisedUserName);
-
-
