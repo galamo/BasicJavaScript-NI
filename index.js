@@ -15,6 +15,14 @@ console.log(userNameLength);
 console.log(userName3);
 
 // indexOf - get the index of the specific given substring or character
-var isMail = userName.indexOf("x");
+var atLocation = userName.indexOf("@");
+console.log(atLocation);
 
-console.log(isMail);
+// subString - get substring according to index start and index end not included
+
+var subStringOf = userName.substring(1, 5);
+console.log(subStringOf);
+
+// print the user name from mail
+var extractUserNameFromMail = userName.substring(0, atLocation);
+console.log(extractUserNameFromMail);

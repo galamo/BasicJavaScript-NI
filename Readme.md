@@ -30,3 +30,8 @@
 - print your username length
 - print the caracter index of 5
 - print the index of character "@"
+
+# Ex 3
+
+- print the email domain
+- use indexOf + substirng
