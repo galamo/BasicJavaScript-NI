@@ -24,3 +24,9 @@
 
 - save your email inside a variable
 - print the email to console.
+
+# Ex 2
+
+- print your username length
+- print the caracter index of 5
+- print the index of character "@"
