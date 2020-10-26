@@ -1,0 +1,9 @@
+.center {
+  margin: auto auto;
+  position: relative;
+  display: inline;
+}
+
+h1:hover {
+  background-color: red;
+}
