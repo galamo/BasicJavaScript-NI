@@ -51,3 +51,11 @@ const str = "gal@gmail.com,sivan@gmail.com,luba@gmail.com";
 var userNames = ["gal@gmail.com", "sivan@gmail.com", "luba@gmail.com"];
 
 how can we solve this issue ?
+
+# Ex 6
+
+- print all the emails domain from the string users
+
+```js
+const str = "gal@gmail.com,sivan@hotmail.com,luba@yahoo.com";
+```
