@@ -39,3 +39,15 @@
 # Ex 4
 
 - print a message with email, user name and username length
+
+# Ex 5
+
+- actual result
+
+const str = "gal@gmail.com,sivan@gmail.com,luba@gmail.com";
+
+- expected result:
+
+var userNames = ["gal@gmail.com", "sivan@gmail.com", "luba@gmail.com"];
+
+how can we solve this issue ?
