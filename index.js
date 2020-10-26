@@ -2,7 +2,7 @@ console.log("Script start");
 /* Save my user name in variable */
 // another way to comment
 
-var userName = "galamouyal88@gmail.com";
+var userName = "GAL.AMOUYAL88@gmail.com";
 // string - array of characters
 console.log(userName);
 
@@ -44,8 +44,21 @@ console.log(messageToManager);
 console.log(messageToManager.length);
 
 // string interpulation es6
-var messageTpManagerNS = `email is: ${userName} 
+var messageToManagerNS = `email is: ${userName} 
 user mail: ${extractUserNameFromMail}
 email domain: ${extractDomain}
 `;
-console.log(messageTpManagerNS);
+console.log(messageToManagerNS.toUpperCase());
+console.log(messageToManagerNS.toLowerCase());
+
+// replace - replace a substring with another given substring
+var rpString = messageToManagerNS.replaceAll("mail", "email");
+console.log(rpString);
+
+// split - split the string to array based on a specific character
+var array = userName.split("@");
+var optimisedUserName = array[0];
+console.log(array);
+console.log(optimisedUserName);
+
+
