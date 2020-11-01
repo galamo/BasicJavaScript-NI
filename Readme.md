@@ -73,3 +73,7 @@ const str = "gal@gmail.com,sivan@hotmail.com,luba@yahoo.com";
 # Ex 9
 
 - create function which recieve 2 numbers and print the bigger
+
+# Ex 10
+
+- salaries - give raise to the employees which their salary is less than 5000\$ of 10%

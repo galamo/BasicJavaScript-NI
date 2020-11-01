@@ -31,3 +31,15 @@ function calcSuccess(grades, limit) {
 }
 
 calcSuccess(grades, 69);
+
+function bigger(n1, n2) {
+  if (n1 > n2) {
+    console.log(n1);
+  } else if (n2 > n1) {
+    console.log(n2);
+  } else {
+    console.log("equal");
+  }
+}
+
+const salaries = [1000, 2000, 6000, 3000];
