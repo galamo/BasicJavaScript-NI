@@ -7,7 +7,8 @@ const cars = [
     Horsepower: 130,
     Weight_in_lbs: 3504,
     Acceleration: 12,
-    Year: "1970-01-01",
+    Year: "1970
+    -01-01",
     Origin: "USA",
   },
   {
@@ -1169,29 +1170,5 @@ const oneCar = {
   },
 };
 
-function getPartialCars(cars) {
-  const result = [];
-  for (let index = 0; index < cars.length; index++) {
-    const newCar = {
-      hp: cars[index].Horsepower,
-      origin: cars[index].Origin,
-      kmPerLiter: Math.ceil(cars[index].Miles_per_Gallon * 1.6) / 3.7,
-    };
-    result.push(newCar);
-  }
-  return result;
-}
 
-function getPartialCarsMap(cars) {
-  return cars.map((car) => {
-    return {
-      hp: car.Horsepower * 1.1,
-      origin: car.Origin,
-      getDetails: () => {
-        return `hp: ${car.Horsepower} , origin: ${car.Origin}`;
-      },
-    };
-  });
-}
 
-getPartialCars(cars);

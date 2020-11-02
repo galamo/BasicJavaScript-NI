@@ -1145,53 +1145,19 @@ const cars = [
   },
 ];
 
-// key - prop , value - string/number/function
-const oneCar = {
-  lp: "255-659-996",
-  km: 0,
-  Name: "buick electra 225 custom",
-  Miles_per_Gallon: 12,
-  Cylinders: 8,
-  Displacement: 455,
-  Horsepower: 225,
-  Weight_in_lbs: 4951,
-  Acceleration: 11,
-  Year: "1973-01-01",
-  Origin: "USA",
-  getDetails: function () {
-    return `Car model: ${this.Name}, HP: ${this.Horsepower} Year: ${this.Year}`;
-  },
-  carDrive: function (newKm) {
-    this.km = this.km + newKm;
-  },
-  getKMPerLiter: function () {
-    return Math.ceil(this.Miles_per_Gallon * 1.6) / 3.7;
-  },
-};
-
-function getPartialCars(cars) {
-  const result = [];
-  for (let index = 0; index < cars.length; index++) {
-    const newCar = {
-      hp: cars[index].Horsepower,
-      origin: cars[index].Origin,
-      kmPerLiter: Math.ceil(cars[index].Miles_per_Gallon * 1.6) / 3.7,
-    };
-    result.push(newCar);
+function getCarPriceCurrency(origin) {
+  switch (origin.toLowerCase()) {
+    case "usa": {
+      return "$";
+    }
+    case "japan": {
+      return "¥";
+    }
+    case "europe": {
+      return "€";
+    }
+    default: {
+      return "Currency is not availble";
+    }
   }
-  return result;
 }
-
-function getPartialCarsMap(cars) {
-  return cars.map((car) => {
-    return {
-      hp: car.Horsepower * 1.1,
-      origin: car.Origin,
-      getDetails: () => {
-        return `hp: ${car.Horsepower} , origin: ${car.Origin}`;
-      },
-    };
-  });
-}
-
-getPartialCars(cars);

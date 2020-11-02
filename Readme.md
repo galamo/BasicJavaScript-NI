@@ -211,6 +211,11 @@ const str = "gal@gmail.com,sivan@hotmail.com,luba@yahoo.com";
 
 - Get all movies with higher rank than 35
 
+# Ex 16:
 
-# Ex 16: 
 - create new method on oneCar obj, which convert miles per gallon to km per galon
+
+# Ex 17:
+
+- add a new case with ILS/NIS support
+- iterate all the cars array and print the relevant currency
