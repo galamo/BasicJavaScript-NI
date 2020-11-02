@@ -210,3 +210,7 @@ const str = "gal@gmail.com,sivan@hotmail.com,luba@yahoo.com";
 # Ex 15:
 
 - Get all movies with higher rank than 35
+
+
+# Ex 16: 
+- create new method on oneCar obj, which convert miles per gallon to km per galon
