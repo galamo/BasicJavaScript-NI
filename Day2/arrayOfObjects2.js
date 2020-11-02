@@ -1195,3 +1195,5 @@ function getPartialCarsMap(cars) {
 }
 
 getPartialCars(cars);
+
+

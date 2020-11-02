@@ -1064,7 +1064,7 @@ const cars = [
     Weight_in_lbs: 3777,
     Acceleration: 12.5,
     Year: "1973-01-01",
-    Origin: "USA",
+    Origin: "ISRAEL",
   },
   {
     Name: "mercury marquis brougham",
@@ -1075,7 +1075,7 @@ const cars = [
     Weight_in_lbs: 4952,
     Acceleration: 11.5,
     Year: "1973-01-01",
-    Origin: "USA",
+    Origin: "ISRAEL",
   },
   {
     Name: "chevrolet caprice classic",
@@ -1156,8 +1156,28 @@ function getCarPriceCurrency(origin) {
     case "europe": {
       return "€";
     }
+    case "israel": {
+      return "₪";
+    }
     default: {
       return "Currency is not availble";
     }
   }
 }
+
+function printCurrenciesPerCar(cars) {
+  for (let index = 0; index < cars.length; index++) {
+    console.log(getCarPriceCurrency(cars[index].Origin));
+  }
+}
+
+// printCurrenciesPerCar(cars);
+
+function getCarsWithCurrencies(cars) {
+  return cars.map((car) => {
+    const currency = getCarPriceCurrency(car.Origin);
+    return { ...car, c: currency };
+  });
+}
+
+console.log(getCarsWithCurrencies(cars));
