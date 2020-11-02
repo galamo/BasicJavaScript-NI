@@ -30,3 +30,11 @@ console.log(product2);
 // delete key
 delete product3.id;
 console.log(product2);
+
+// add key
+product.category = "drinks";
+console.log(product);
+
+const cart = [];
+cart.push(product);
+cart.push(product3);
