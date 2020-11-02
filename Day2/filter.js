@@ -32,8 +32,9 @@ function getEmailFunction(userName) {
 
 const salaries = [5000, 2000, 3500];
 function getHighSalaries(arrOfNumbers, salary) {
-  const salResult = arrOfNumbers.filter((currentSalary) => {
-    return currentSalary > salary;
+  if (!Array.isArray(arrOfNumbers)) return;
+  const salResult = arrOfNumbers.filter((sal) => {
+    return sal > salary;
   });
   return salResult;
 }
