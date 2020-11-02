@@ -1,90 +1,4 @@
-# Basic Javascript
-
-## Welcome!
-
-### Download VS code: : https://code.visualstudio.com/download
-
-# Lesson 1:
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-</body>
-</html>
-```
-
-# Ex1
-
-- save your email inside a variable
-- print the email to console.
-
-# Ex 2
-
-- print your username length
-- print the caracter index of 5
-- print the index of character "@"
-
-# Ex 3
-
-- print the email domain
-- use indexOf + substirng
-
-# Ex 4
-
-- print a message with email, user name and username length
-
-# Ex 5
-
-- actual result
-
-const str = "gal@gmail.com,sivan@gmail.com,luba@gmail.com";
-
-- expected result:
-
-var userNames = ["gal@gmail.com", "sivan@gmail.com", "luba@gmail.com"];
-
-how can we solve this issue ?
-
-# Ex 6
-
-- print all the emails domain from the string users
-
-```js
-const str = "gal@gmail.com,sivan@hotmail.com,luba@yahoo.com";
-```
-
-# Ex 7
-
-- create a function that recieve 2 numbers
-- function return the avarage between those numbers
-
-# Ex 8
-
-- create a function that recieve array of numbers
-- function return the avarage of all number in array
-
-# Ex 9
-
-- create function which recieve 2 numbers and print the bigger
-
-# Ex 10
-
-- salaries - give raise to the employees which their salary is less than 5000\$ of 10%
-
-# Ex 11
-
-- Filter: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-- write a function that recieve list of movies & movie title and return the movies which inludes the relevant title
-
-```js
-[
+const movies = [
   "The Shawshank Redemption",
   "The Godfather",
   "The Godfather: Part II",
@@ -186,10 +100,14 @@ const str = "gal@gmail.com,sivan@hotmail.com,luba@yahoo.com";
   "Grave of the Fireflies",
   "Indiana Jones and the Last Crusade",
 ];
-```
 
-# Ex 12:
-
-- Declare Movie object
-- model the movie with the following keys:
-  title, year, rate, main actor name
+// find return string/number/ any type - exact one element
+// findIndex return number - the index of the element
+function getSingleMovie(movies, title) {
+  if (Array.isArray(movies) === false) return;
+  if (typeof title !== "string") return;
+  const result = movies.find((currentMovie) => {
+    return currentMovie.toLowerCase().includes(title);
+  });
+  return result;
+}
