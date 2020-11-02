@@ -193,3 +193,16 @@ const str = "gal@gmail.com,sivan@hotmail.com,luba@yahoo.com";
 - Declare Movie object
 - model the movie with the following keys:
   title, year, rate, main actor name
+
+# Ex 13:
+
+- Edit your movie rate
+- Add new Key to your movie - duration(min)
+- Print the new object
+- Delete the new key - duration
+- Print the object
+
+# Ex 14:
+
+- create array of movies contain 3 movies
+- print each one of the array items with for loop
