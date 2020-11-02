@@ -502,7 +502,7 @@ const movies = [
   },
 ];
 
-console.log(movies);
+// console.log(movies);
 // print all titles
 
 function getTitles(movies) {
@@ -511,4 +511,20 @@ function getTitles(movies) {
   }
 }
 
-getTitles(movies);
+// getTitles(movies);
+
+function getRankedMovies(movies, score) {
+  let result = [];
+  for (let index = 0; index < movies.length; index++) {
+    if (Number(movies[index].rank) > score) {
+      result.push(movies[index]);
+    }
+  }
+  return result;
+}
+
+function getRankedMoviesModern(movies, score) {
+  return movies.filter((movie) => {
+    return Number(movie.rank) > score;
+  });
+}
