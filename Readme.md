@@ -206,3 +206,7 @@ const str = "gal@gmail.com,sivan@hotmail.com,luba@yahoo.com";
 
 - create array of movies contain 3 movies
 - print each one of the array items with for loop
+
+# Ex 15:
+
+- Get all movies with higher rank than 35

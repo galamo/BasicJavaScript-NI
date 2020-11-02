@@ -501,3 +501,14 @@ const movies = [
     id: "tt0097576",
   },
 ];
+
+console.log(movies);
+// print all titles
+
+function getTitles(movies) {
+  for (let index = 0; index < movies.length; index++) {
+    console.log(movies[index].rank);
+  }
+}
+
+getTitles(movies);
